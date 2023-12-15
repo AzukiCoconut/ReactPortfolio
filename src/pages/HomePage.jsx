@@ -1,6 +1,5 @@
 function HomePage() {
     return (
-        <main className="bg-light">
         <section className="bg-light m-auto">
             <div className="container-lg d-flex flex-column m-auto p-3">
             <h2>About Me</h2>
@@ -21,7 +20,6 @@ function HomePage() {
             </p>
             </div>
         </section>
-        </main>
     );
 }
 
