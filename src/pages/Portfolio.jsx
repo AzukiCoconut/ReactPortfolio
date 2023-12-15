@@ -1,5 +1,6 @@
 import Project from '../Components/UI/Project';
 
+// Handles the display of the portfolio page, makes use of the Project UI component
 function Portfolio() {
     return (
         <section class="bg-light">
