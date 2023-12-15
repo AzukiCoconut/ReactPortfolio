@@ -9,7 +9,9 @@ function App() {
   return (
     <>
      <Header />
-     <Outlet />
+      <main className="bg-light p-4">
+        <Outlet />
+      </main>
      <Footer />
     </>
   );
