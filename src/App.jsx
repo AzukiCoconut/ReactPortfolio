@@ -9,7 +9,7 @@ function App() {
   return (
     <>
      <Header />
-      <main className="bg-light p-4">
+      <main className="bg-light p-sm-1 pb-3">
         <Outlet />
       </main>
      <Footer />

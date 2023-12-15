@@ -12,8 +12,8 @@ function Project( { src, alt, projectLink, projectTitle, gitHubLink}) {
             />
             <div className="overlay">
                 <div className="projects">
-                    <a href={projectLink}>{projectTitle}</a>
-                    <a href={gitHubLink}><FontAwesomeIcon className="icon" icon={faGithub} /> </a>
+                    <a href={projectLink} target='_blank'>{projectTitle}</a>
+                    <a href={gitHubLink} target='_blank'><FontAwesomeIcon className="icon" icon={faGithub} /> </a>
                 </div>
             </div>
         </div>
