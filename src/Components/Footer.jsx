@@ -1,6 +1,7 @@
 import SocialMedia from './UI/SocialMedia';
 import { fab, faGithub, faInstagram, faLinkedin } from '@fortawesome/free-brands-svg-icons';
 
+// the footer component
 function Footer() {
     return (
         <footer className="bg-dark-test p-3">

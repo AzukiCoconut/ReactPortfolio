@@ -1,13 +1,15 @@
 import { useState } from 'react';
 import { validateEmail } from '../utils/helpers';
 
-
+// Handles the contact form on the page.
 function Contact() {
+  // setup state variables
   const [fullName, setFullName] = useState('');
   const [email, setEmail] = useState('');
   const [message, setMessage] = useState('');
   const [errorMessage, setErrorMessage] = useState('');
 
+  // Function to handle the change to input on the form
   const handleInputChange = (e) => {
     setErrorMessage('');
     const { target } = e;
@@ -23,20 +25,24 @@ function Contact() {
     }
   };
 
+  // handle the form submit
   const handleFormSubmit = (e) => {
     e.preventDefault();
 
+    // validate the input
     if (!validateEmail(email) || !fullName || !message) {
       setErrorMessage('Email or username or message is invalid');
       return;
     }
 
+    // reset the variables
     setFullName('');
     setEmail('');
     setMessage('');
     setErrorMessage('Submission successful!')
   };
 
+  // handles the error messaging if the input losses focus
   const handleLostFocus = (e) => {
     if (!fullName) {
         setErrorMessage('You must enter your name');
@@ -52,6 +58,7 @@ function Contact() {
     }
   }
 
+  // handle the display
   return (
       <section className="bg-light m-auto container-sm">
       <div className="row">

@@ -1,3 +1,5 @@
+
+// A function that displays the Resume page.  Also allows for the user to download a resume.
 function Resume() {
     return (
         <section class="bg-light m-auto container-sm">
