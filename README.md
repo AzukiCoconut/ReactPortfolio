@@ -11,8 +11,9 @@ A portfolio site for Matt Tingley at Black Cat Solutions. This site is built usi
 ## Usage
 
 Below is a screenshot of the completed site.
+![Screenshot of the completed ReactPortfolio application.](/src/Assets/images/Screenshot_ReactPortfolio.png)
 
-This is a link to the deployed application on Heroku:
+This is a link to the deployed application on Heroku: https://legendary-beijinho-487df0.netlify.app/
 
 ## Credits
 
