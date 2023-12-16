@@ -10,7 +10,7 @@ function Header() {
     return (
         // Create the navbar
         <Navbar collapseOnSelect expand="md" bg="dark" variant="dark" className="p-0">
-          <Container>
+          <Container fluid>
             // The navbar brand 
         <Navbar.Brand href="#">
           <img
