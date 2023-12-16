@@ -9,10 +9,9 @@ function Header() {
     const currentPage = useLocation().pathname;
 
     return (
-        // Create the navbar
-        <Navbar collapseOnSelect expand="md" bg="dark" variant="dark" className="p-0">
-          <Container fluid>
-            // The navbar brand 
+        <Navbar collapseOnSelect expand="sm" bg="dark" variant="dark" className="p-0">
+          <Container>
+
         <Navbar.Brand href="#">
           <img
             className="logo"
@@ -21,7 +20,7 @@ function Header() {
           />
           <b>Matt Tingley</b>
         </Navbar.Brand>
-        // Setup the navigation links with responsive functionality handled by Bootstrap
+
         <Navbar.Toggle aria-controls="responsive-navbar-nav" data-bs-target="#responsive-navbar-nav" />
           <Navbar.Collapse id="responsive-navbar-nav" className="justify-content-end"> 
             <Nav>
