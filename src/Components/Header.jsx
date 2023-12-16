@@ -2,6 +2,7 @@ import { Link, useLocation } from 'react-router-dom';
 import Container from 'react-bootstrap/Container';
 import Nav from 'react-bootstrap/Nav';
 import Navbar from 'react-bootstrap/Navbar';
+import logo from '../Assets/images/BCS_Logo_White_nobackground.png';
 
 //Header component with brand and navigation. Uses React Bootstrap to manage navigation
 function Header() {
@@ -15,7 +16,7 @@ function Header() {
         <Navbar.Brand href="#">
           <img
             className="logo"
-            src='./src/Assets/images/BCS_Logo_White_nobackground.png'
+            src={logo}
             alt="Black Cat Solutions Logo"
           />
           <b>Matt Tingley</b>

@@ -1,3 +1,5 @@
+import profile from "../Assets/images/profile.jpg"
+
 function HomePage() {
     return (
         <section className="bg-light m-auto">
@@ -5,7 +7,7 @@ function HomePage() {
             <h2>About Me</h2>
             <img
                 className="profile-photo m-auto m-lg-3 p-1"
-                src="../src/Assets/images/profile.jpg"
+                src={profile}
                 alt="Profile - Matt Tingley"
             />
             <p className="p-3">
