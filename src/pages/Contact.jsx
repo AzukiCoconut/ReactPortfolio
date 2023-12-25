@@ -1,5 +1,6 @@
-import { useState } from 'react';
+import { useState, useRef } from 'react';
 import { validateEmail } from '../utils/helpers';
+import emailjs from '@emailjs/browser';
 
 // Handles the contact form on the page.
 function Contact() {
@@ -8,6 +9,7 @@ function Contact() {
   const [email, setEmail] = useState('');
   const [message, setMessage] = useState('');
   const [errorMessage, setErrorMessage] = useState('');
+  const form = useRef();
 
   // Function to handle the change to input on the form
   const handleInputChange = (e) => {
@@ -35,11 +37,17 @@ function Contact() {
       return;
     }
 
+    emailjs.sendForm('service_d7rrmq3', 'template_c0ouyge', form.current, '-xL3FPKznHa5KNysi')
+      .then((result) => {
+        setErrorMessage(result.text);
+      }, (error) => {
+        setErrorMessage(error.text);
+      });
+
     // reset the variables
     setFullName('');
     setEmail('');
     setMessage('');
-    setErrorMessage('Submission successful!')
   };
 
   // handles the error messaging if the input losses focus
@@ -63,7 +71,7 @@ function Contact() {
       <section className="bg-light m-auto container-sm">
       <div className="row">
         <h2>Contact Me</h2>
-        <form onSubmit={handleFormSubmit}>
+        <form ref={form} onSubmit={handleFormSubmit}>
           <div className="mb-3">
             <label for="name" className="form-label">Name:</label>
             <input

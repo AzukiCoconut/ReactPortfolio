@@ -1,5 +1,5 @@
 
-import resume from '../Assets/docs/Resume - Matthew R Tingley.pdf';
+import resume from '../Assets/docs/WebResume - Matthew R Tingley.pdf';
 // A function that displays the Resume page.  Also allows for the user to download a resume.
 function Resume() {
     return (

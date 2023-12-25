@@ -17,8 +17,7 @@ function HomePage() {
                 Science and Business. He is a specialist in Data Analytics
                 leaveraging his IT skills in database management and application
                 development to bring important information forward for corporate
-                consumption and action. Matthew is currently upgrading his skills to
-                offer website development as a service to his clients.
+                consumption and action.
             </p>
             </div>
         </section>
