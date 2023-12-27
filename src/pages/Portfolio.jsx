@@ -13,7 +13,7 @@ function Portfolio() {
           
         <div class="container">
           <h2>Portfolio</h2>
-          <p>Here are some samples of my past work.  Hover over the images for a link to the deployed site and to my Github repository.</p>
+          <p>Here are some samples of my past work.  Hover over the images for a link to the deployed site and the Github repository.</p>
           <div class="row g-3 mt-1">
             <div class="col-12 col-md-6 d-flex justify-content-center">
                 <Project src={Project1} alt="Horiseon Marketing" projectLink="https://azukicoconut.github.io/HoriseonMarketing/" projectTitle="Horiseon Marketing" gitHubLink="https://github.com/AzukiCoconut/HoriseonMarketing"/>

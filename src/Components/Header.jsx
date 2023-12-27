@@ -24,7 +24,6 @@ function Header() {
         <Navbar.Toggle aria-controls="responsive-navbar-nav" data-bs-target="#responsive-navbar-nav" />
           <Navbar.Collapse id="responsive-navbar-nav" className="justify-content-end"> 
             <Nav>
-              //Navigation links
             <Nav.Link key={1} as={Link} to={"/"} className={currentPage === "/" ? "active" : ""}>About</Nav.Link>
             <Nav.Link key={2}  as={Link} to={"/portfolio"} className={currentPage === "/portfolio" ? "active" : ""}>Portfolio</Nav.Link>
             <Nav.Link key={3}  as={Link} to={"/contact"} className={currentPage === "/contact" ? "active" : ""}>Contact</Nav.Link>
