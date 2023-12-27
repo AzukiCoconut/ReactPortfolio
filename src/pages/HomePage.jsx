@@ -12,12 +12,10 @@ function HomePage() {
             />
             <p className="p-3">
                 Matthew Tingley has been running Black Cat Soltuions since 2003.
-                Matthew is a Chartered Professional Accountant and Certified
-                Management Accountant since 2011 and he posseses degrees in Computer
-                Science and Business. He is a specialist in Data Analytics
-                leaveraging his IT skills in database management and application
-                development to bring important information forward for corporate
-                consumption and action.
+                He posseses degrees in Computer Science and Business, and has been a 
+                Chartered Professional Accountant and Certified Management Accountant since 2011. 
+                He is a specialist in Data Analytics leaveraging his IT skills in database management and application
+                development to bring important information forward for corporate consumption and action.
             </p>
             </div>
         </section>
