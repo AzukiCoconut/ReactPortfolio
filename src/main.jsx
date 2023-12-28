@@ -5,6 +5,7 @@ import { createBrowserRouter, RouterProvider } from 'react-router-dom';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import './Assets/styles/index.css';
 
+
 // importing pages needed for navigation
 import App from './App.jsx'
 import ErrorPage from './pages/ErrorPage';

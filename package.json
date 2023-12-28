@@ -25,6 +25,9 @@
     "serve": "^14.2.1"
   },
   "devDependencies": {
+    "@babel/node": "^7.22.19",
+    "@babel/preset-env": "^7.23.6",
+    "@babel/preset-react": "^7.23.3",
     "@types/react": "^18.2.37",
     "@types/react-dom": "^18.2.15",
     "@vitejs/plugin-react": "^4.2.0",
@@ -32,6 +35,7 @@
     "eslint-plugin-react": "^7.33.2",
     "eslint-plugin-react-hooks": "^4.6.0",
     "eslint-plugin-react-refresh": "^0.4.4",
+    "react-router-sitemap-generator": "^0.0.8",
     "vite": "^5.0.0"
   }
 }
