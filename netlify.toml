@@ -1,3 +1,28 @@
+[build]
+    publish = "dist"
+
+[[plugins]]
+    package = "netlify-plugin-submit-sitemap"
+
+    [plugins.inputs]
+
+    baseUrl = "http://matthewtingley.ca"
+
+    sitemapPath = "/sitemap.xml"
+
+    ignorePeriod = 0
+
+    providers = [
+        "google",
+        "yandex"
+    ]
+
+[[plugins]]
+    package = "@netlify/plugin-sitemap"
+
+    [plugins.inputs]
+    buildDir = "dist"
+    
 [[redirects]]
     from = "/*"
     to = "/index.html"
