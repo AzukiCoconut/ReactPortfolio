@@ -1,3 +1,4 @@
 [[redirects]]
     from = "/portfolio"
     to = "/portfolio"
+    status = 301
