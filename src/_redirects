@@ -1,5 +1,5 @@
-/   /
-/portfolio  /portfolio
-/contact    /contact
-/resume     /resume
-/sitemap.xml    /sitemap.xml
+/   dist/
+/portfolio  dist/portfolio
+/contact    dist/contact
+/resume     dist/resume
+/sitemap.xml    dist/sitemap.xml
