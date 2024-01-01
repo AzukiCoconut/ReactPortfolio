@@ -6,7 +6,8 @@
   "scripts": {
     "dev": "vite",
     "start": "serve dist",
-    "build": "vite build",
+    "build": "vite build && npm run sitemap",
+    "sitemap": "vite-node src/utils/sitemap-generator.js",
     "lint": "eslint . --ext js,jsx --report-unused-disable-directives --max-warnings 0",
     "preview": "vite preview"
   },
@@ -21,20 +22,27 @@
     "react": "^18.2.0",
     "react-bootstrap": "^2.9.1",
     "react-dom": "^18.2.0",
+    "react-router": "^6.21.1",
     "react-router-dom": "^6.20.1",
+    "react-router-sitemap-maker": "^1.1.0",
     "serve": "^14.2.1"
   },
   "devDependencies": {
+    "@babel/cli": "^7.23.4",
+    "@babel/core": "^7.23.7",
+    "@babel/node": "^7.22.19",
+    "@babel/preset-env": "^7.23.7",
+    "@babel/register": "^7.23.7",
     "@netlify/plugin-sitemap": "^0.8.1",
     "@types/react": "^18.2.37",
     "@types/react-dom": "^18.2.15",
     "@vitejs/plugin-react": "^4.2.0",
-    "babel-register": "^6.26.0",
     "eslint": "^8.53.0",
     "eslint-plugin-react": "^7.33.2",
     "eslint-plugin-react-hooks": "^4.6.0",
     "eslint-plugin-react-refresh": "^0.4.4",
     "netlify-plugin-submit-sitemap": "^0.4.0",
-    "vite": "^5.0.0"
+    "vite": "^5.0.0",
+    "vite-node": "^1.1.1"
   }
 }
